@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Computación Gráfica</title>
+    <link rel="shorcut icon" href="img/pizza.jpg" type="image/pgn">
+    <link rel="stylesheet" type="text/css" href="formato.css">
+    <link rel="stylesheet" type="text/javascript" href="three.js">
+    <link rel="stylesheet" type="text/javascript" href="STLLoader.js">
+</head>
+<body> 
+    <!-- PRESENTACIÓN -->
+    <div id="contenido">
+        <h1 style="text-align: center">Bienvenidos a los columpios virtuales !</h1>
+        <p style="text-align: center">Este es un proyecto con fin educativo implementando conceptos de computación gráfica.</p>
+        <p style="text-align: center">Realizado por Maria Clara Lacouture, Samuel Arango y Luis Felipe Montoya.</p><br>
+        <!-- CUESTIONARIO -->
+        <h3 id="ini">Responde estas preguntas para saber cuántos columpios tendrás !</h3>        
+        <em id="i">Selecciona la respuesta a cada pregunta y hunde click en Finalizar para terminar tu intento.</em><br><br>
+        <!-- SEPARAMOS EL ESPACIO PARA LAS PREGUNTAS -->
+        <form name="quiz">
+        <div id="PregIzq"> <!-- PARA PARA LAS PREGUNTAS A LA IZQUIERDA -->
+            <p>1. ¿Qué colores tiene la bandera de Camerún?<br><br>
+            <input type="radio" name="primeraPregunta" value="Verde y rojo" required>Verde y rojo<br>
+            <input type="radio" name="primeraPregunta" value="Verde y amarillo">Verde y amarillo<br>
+            <input type="radio" name="primeraPregunta" value="Amarillo, rojo y negro">Amarillo, rojo y negro<br>
+            <input type="radio" name="primeraPregunta" value="Verde, rojo y amarillo">Verde, rojo y amarillo<br><br>
+            </p>
+
+            <p>3. ¿Cuál es la capital de Romania?<br><br>
+            <input type="radio" name="terceraPregunta" value="Sofía" required>Sofía<br>
+            <input type="radio" name="terceraPregunta" value="Bucarest">Bucarest<br>
+            <input type="radio" name="terceraPregunta" value="Kiev">Kiev<br>
+            <input type="radio" name="terceraPregunta" value="Bratislava">Bratislava<br><br>
+            </p>
+
+            <p>5. ¿Cómo se llama actualmente la antigua ciudad de Stalingrado?<br><br>
+            <input type="radio" name="quintaPregunta" value="Stalingrado" required>Stalingrado<br>
+            <input type="radio" name="quintaPregunta" value="Volnov">Volnov<br>
+            <input type="radio" name="quintaPregunta" value="Volgogrado">Volgogrado<br>
+            <input type="radio" name="quintaPregunta" value="Novoribirsk">Novoribirsk<br><br>
+            </p>
+
+            <p>7. ¿Cuántos elementos tiene la tabla periódica?<br><br>
+            <input type="radio" name="septimaPregunta" value="121" required>120<br> 
+            <input type="radio" name="septimaPregunta" value="132">132<br>
+            <input type="radio" name="septimaPregunta" value="98">90<br>
+            <input type="radio" name="septimaPregunta" value="118">118<br><br>
+            </p>
+
+            <p>9. ¿Dónde se inventó el ping pong?<br><br>
+            <input type="radio" name="novenaPregunta" value="China" required>China<br>
+            <input type="radio" name="novenaPregunta" value="Hong Kong">Hong Kong<br>
+            <input type="radio" name="novenaPregunta" value="Inglaterra">Inglaterra<br>
+            <input type="radio" name="novenaPregunta" value="Colombia">Colombia<br><br>
+            </p>
+        </div>
+        
+        <div id="PregDer"> <!-- PARA PARA LAS PREGUNTAS A LA DERECHA -->
+            <p>2. ¿Cuál es el sexto planeta del Sistema Solar?<br><br>
+            <input type="radio" name="segundaPregunta" value="La Tierra" required>La Tierra<br>
+            <input type="radio" name="segundaPregunta" value="Plutón">Plutón<br>
+            <input type="radio" name="segundaPregunta" value="Saturno">Saturno<br>
+            <input type="radio" name="segundaPregunta" value="Neptuno">Neptuno<br><br>
+            </p>
+
+            <p>4. ¿Cuál es el cuarto país más poblado del planeta?<br><br>
+            <input type="radio" name="cuartaPregunta" value="Rusia" required>Rusia<br>
+            <input type="radio" name="cuartaPregunta" value="Brasil">Brasil<br>
+            <input type="radio" name="cuartaPregunta" value="Indonesia">Indonesia<br>
+            <input type="radio" name="cuartaPregunta" value="México">México<br><br>
+            </p>
+
+            <p>6. ¿En qué año naufragó el Titanic?<br><br>
+            <input type="radio" name="sextaPregunta" value="1920" required>1920<br>
+            <input type="radio" name="sextaPregunta" value="1912">1912<br>
+            <input type="radio" name="sextaPregunta" value="1911">1911<br>
+            <input type="radio" name="sextaPregunta" value="1909">1909<br><br>
+            </p>
+
+            <p>8. ¿Cuál es la capital de Afganistán?<br><br>
+            <input type="radio" name="octavaPregunta" value="Kabul" required>Kabul<br>
+            <input type="radio" name="octavaPregunta" value="Riyad">Riyad<br>
+            <input type="radio" name="octavaPregunta" value="Bagdad">Bagdad<br>
+            <input type="radio" name="octavaPregunta" value="Teheran">Teheran<br><br>
+            </p>
+
+            <p>10. ¿Cuál es la ciudad más poblada del mundo?<br><br>
+            <input type="radio" name="decimaPregunta" value="Pekin" required>Pekin<br>
+            <input type="radio" name="decimaPregunta" value="Delhi">Delhi<br>
+            <input type="radio" name="decimaPregunta" value="Tokyo">Tokyo<br>
+            <input type="radio" name="decimaPregunta" value="Shanghai">Shanghai<br><br>
+            </p>
+        </div>     
+        <br><br>
+    </div>
+    
+    <!-- BOTÓN PARA VER LAS RESPUESTAS -->
+    <br><button onclick = returnScore() id=result>Ver resultados</button><br>
+    <script type="text/javascript" src="validarRespuestas.js"></script>
+    </form>
+
+</body>
+
+
+<!-- VALIDACIÓN DE LAS RESPUESTAS -->
+<!--
+<script>
+var userInput = [];
+var solucion = [];
+solucion[0] = "Verde, rojo y amarillo";
+solucion[1] = "Saturno";
+solucion[2] = "Bucarest";
+solucion[3] = "Indonesia";
+solucion[4] = "Volgogrado";
+solucion[5] = "1912";
+solucion[6] = "118";
+solucion[7] = "Kabul";
+solucion[8] = "Inglaterra";
+solucion[9] = "Tokyo";
+var completado = false;
+
+function getScore() {
+    var score = 0;
+    var numQuestions = 10;
+    var form = document.getElementById('quiz');
+
+    userInput[0] = quiz.primeraPregunta.value;
+    userInput[1] = quiz.segundaPregunta.value;
+    userInput[2] = quiz.terceraPregunta.value;
+    userInput[3] = quiz.cuartaPregunta.value;
+    userInput[4] = quiz.quintaPregunta.value;
+    userInput[5] = quiz.sextaPregunta.value;
+    userInput[6] = quiz.septimaPregunta.value;
+    userInput[7] = quiz.octavaPregunta.value;
+    userInput[8] = quiz.novenaPregunta.value;
+    userInput[9] = quiz.decimaPregunta.value;
+
+
+    for (var i = 0; i < numQuestions; i++) {
+        if (userInput[i] == solucion[i]) {
+            score += 1;
+        } else {
+            score += 0;
+        }
+        if (userInput[i] == false){alert("Por favor, responde a todas las preguntas."); completado == false; break;} 
+        else { completado == true; } 
+    }
+    return score;
+} 
+
+function returnScore() {
+    alert("Tu puntuación fue de " + getScore() + "/10");
+    if(completado == true){
+        var confirmacion = confirm("¿Deseas ser redireccionado a la página de respuestas?");
+            if (confirmacion == true) {
+                window.open("SolucionPreguntas.html",'_blank');
+            } else {
+                return false;
+            }
+    } 
+}
+</script>
+-->
+
+</html>
